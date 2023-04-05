@@ -1,5 +1,6 @@
 import os
 import pathlib
+import time
 from datetime import datetime, timedelta
 
 import pylunar
@@ -21,7 +22,7 @@ SAINT_PETERSBURG_COORDINATES = (59, 56, 15), (30, 18, 30)
 def next_moon_phase_datetime(moon_info: MoonInfo) -> datetime:
     next_phase_datetime = moon_info.next_four_phases()[0][1]
     next_moon_phase_date = datetime(*next_phase_datetime[:-1])  # UTC without seconds, since cron doesn't support them anyway
-    timezone_offset = timedelta(hours=3)  # UTC -> UTC+3
+    timezone_offset = timedelta(seconds=-time.timezone)
     extra_minute = timedelta(minutes=1)  # moon phase won't change cuz we threw out the seconds, so we'll add extra min
     return next_moon_phase_date + timezone_offset + extra_minute
 
