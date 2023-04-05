@@ -52,9 +52,9 @@ def set_status(document_id: int, session_file: str) -> None:
         client(UpdateEmojiStatusRequest(EmojiStatus(document_id)))
 
 
-def set_cronjob(datetime_: datetime, command: str) -> None:
+def set_cronjob(datetime_: datetime, command: str, comment: str) -> None:
     with CronTab(user=True) as cron:
-        job = cron.new(command)
+        job = cron.new(command, comment=comment)
         job.setall(datetime_)
 
 
@@ -75,4 +75,4 @@ if __name__ == '__main__':
     command = f'{abspath.parent}/venv/bin/python {abspath} >> out.txt  2>&1'
 
     delete_previous_cronjobs(command)
-    set_cronjob(next_moon_phase_datetime_, command)
+    set_cronjob(next_moon_phase_datetime_, command, moon_info.next_four_phases()[0][0])
