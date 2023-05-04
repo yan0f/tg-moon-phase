@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "moon-phase-status"
+version = "0.1.0"
+description = ""
+authors = ["yan0f <31446439+yan0f@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pylunar = "^0.6.0"
+python-dotenv = "^1.0.0"
+telethon = "^1.28.5"
+python-crontab = "^2.7.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.264"
+
+[tool.ruff]
+line-length = 120
+select = ["I"]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
