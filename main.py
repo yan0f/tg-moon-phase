@@ -13,7 +13,7 @@ from telethon.types import EmojiStatus
 load_dotenv(find_dotenv())
 
 API_HASH = os.environ['API_HASH']
-API_ID = int(os.environ['API_ID'])
+API_ID = os.environ['API_ID']
 
 SAINT_PETERSBURG_COORDINATES = (59, 56, 15), (30, 18, 30)
 
@@ -24,7 +24,7 @@ def next_moon_phase_datetime(moon_info: MoonInfo) -> datetime:
         *next_phase_datetime[:-1]
     )  # UTC without seconds, since cron doesn't support them anyway
     timezone_offset = timedelta(seconds=-time.timezone)
-    # moon phase won't change cuz we threw out the seconds, so we'll add extra min
+    # moon phase won't change because we threw out the seconds, so we'll add extra minute
     extra_minute = timedelta(minutes=1)
     return next_moon_phase_date + timezone_offset + extra_minute
 
