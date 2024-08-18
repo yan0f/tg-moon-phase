@@ -10,7 +10,7 @@ The script runs automatically at regular intervals using a cron job.
 ## Requirements
 To run this project, you will need:
 
-- Python 3.10 or higher
+- Python 3.11 or higher
 - A Telegram account and API key
 
 
