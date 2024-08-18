@@ -137,12 +137,13 @@ test = ["coverage[toml] (==7.4.0)", "pytest (==7.4.4)"]
 
 [[package]]
 name = "python-crontab"
-version = "3.1.0"
+version = "3.2.0"
 description = "Python Crontab API"
 optional = false
 python-versions = "*"
 files = [
-    {file = "python-crontab-3.1.0.tar.gz", hash = "sha256:f4ea1605d24533b67fa7a634ef26cb59a5f2e7954f6e677d2d7a2229959a2fc8"},
+    {file = "python_crontab-3.2.0-py3-none-any.whl", hash = "sha256:82cb9b6a312d41ff66fd3caf3eed7115c28c195bfb50711bc2b4b9592feb9fe5"},
+    {file = "python_crontab-3.2.0.tar.gz", hash = "sha256:40067d1dd39ade3460b2ad8557c7651514cd3851deffff61c5c60e1227c5c36b"},
 ]
 
 [package.dependencies]
@@ -236,4 +237,4 @@ cryptg = ["cryptg"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "284691b09f8ddf49d655d6955bafd066cc7566ee474cdd3572a6b46b3ef6bc49"
+content-hash = "6d249f436532c3e8cd77b5d9f5281341c40b46fef1d98336adc2d46e836a72b2"
