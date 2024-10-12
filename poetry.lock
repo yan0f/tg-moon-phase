@@ -104,36 +104,36 @@ files = [
 
 [[package]]
 name = "pyasn1"
-version = "0.6.0"
+version = "0.6.1"
 description = "Pure-Python implementation of ASN.1 types and DER/BER/CER codecs (X.208)"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pyasn1-0.6.0-py2.py3-none-any.whl", hash = "sha256:cca4bb0f2df5504f02f6f8a775b6e416ff9b0b3b16f7ee80b5a3153d9b804473"},
-    {file = "pyasn1-0.6.0.tar.gz", hash = "sha256:3a35ab2c4b5ef98e17dfdec8ab074046fbda76e281c5a706ccd82328cfc8f64c"},
+    {file = "pyasn1-0.6.1-py3-none-any.whl", hash = "sha256:0d632f46f2ba09143da3a8afe9e33fb6f92fa2320ab7e886e2d0f7672af84629"},
+    {file = "pyasn1-0.6.1.tar.gz", hash = "sha256:6f580d2bdd84365380830acf45550f2511469f673cb4a5ae3857a3170128b034"},
 ]
 
 [[package]]
 name = "pylunar"
-version = "0.7.2"
+version = "0.7.3"
 description = "Information for completing the Astronomical League's Lunar and Lunar II observing programs."
 optional = false
 python-versions = "*"
 files = [
-    {file = "pylunar-0.7.2-py3-none-any.whl", hash = "sha256:55cb9d700235f4ec63c073123211d810095d8f1ffe461279a011d4be134e552c"},
-    {file = "pylunar-0.7.2.tar.gz", hash = "sha256:2df5892b1a39c11a7bc134751398c7a816a9dcf7b57e49817b006e6e718a77e9"},
+    {file = "pylunar-0.7.3-py3-none-any.whl", hash = "sha256:3122d8fbb56d2da89004e4d57edbd7a4df1f7536467d016e8d061251981eae51"},
+    {file = "pylunar-0.7.3.tar.gz", hash = "sha256:c2aabf9ab572a4c08214653eacd4201a6486a9751ab282f3f2f91f7cb5b13d54"},
 ]
 
 [package.dependencies]
 ephem = "4.1.5"
-pytz = "2024.1"
+pytz = "2024.2"
 
 [package.extras]
-build = ["build (==1.0.3)", "twine (==4.0.2)"]
-dev = ["pylunar[build,docs,lint,test]", "tox (==4.11.4)"]
+build = ["build (==1.2.2)", "twine (==5.1.1)"]
+dev = ["pylunar[build,docs,lint,test]", "tox (==4.20.0)"]
 docs = ["sphinx (>=7.1,<8.0)", "sphinx-rtd-theme (==2.0.0)"]
-lint = ["pre-commit (>=3.5.0,<3.6.0)"]
-test = ["coverage[toml] (==7.4.0)", "pytest (==7.4.4)"]
+lint = ["pre-commit (==3.5.0)", "pre-commit (==3.8.0)"]
+test = ["coverage[toml] (==7.6.1)", "pytest (==8.3.3)"]
 
 [[package]]
 name = "python-crontab"
@@ -183,13 +183,13 @@ cli = ["click (>=5.0)"]
 
 [[package]]
 name = "pytz"
-version = "2024.1"
+version = "2024.2"
 description = "World timezone definitions, modern and historical"
 optional = false
 python-versions = "*"
 files = [
-    {file = "pytz-2024.1-py2.py3-none-any.whl", hash = "sha256:328171f4e3623139da4983451950b28e95ac706e13f3f2630a879749e7a8b319"},
-    {file = "pytz-2024.1.tar.gz", hash = "sha256:2a29735ea9c18baf14b448846bde5a48030ed267578472d8955cd0e7443a9812"},
+    {file = "pytz-2024.2-py2.py3-none-any.whl", hash = "sha256:31c7c1817eb7fae7ca4b8c7ee50c72f93aa2dd863de768e1ef4245d426aa0725"},
+    {file = "pytz-2024.2.tar.gz", hash = "sha256:2aa355083c50a0f93fa581709deac0c9ad65cca8a9e9beac660adcbd493c798a"},
 ]
 
 [[package]]
@@ -219,12 +219,12 @@ files = [
 
 [[package]]
 name = "telethon"
-version = "1.36.0"
+version = "1.37.0"
 description = "Full-featured Telegram client library for Python 3"
 optional = false
 python-versions = ">=3.5"
 files = [
-    {file = "Telethon-1.36.0.tar.gz", hash = "sha256:11db5c7ed7e37f1272d443fb7eea0f1db580d56c6949165233946fb323aaf3a7"},
+    {file = "Telethon-1.37.0.tar.gz", hash = "sha256:e5e43cff1c1b34e2f9c2b395215beb6e9bda706b69def7efff4f55b23c9c4374"},
 ]
 
 [package.dependencies]
@@ -237,4 +237,4 @@ cryptg = ["cryptg"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "6d249f436532c3e8cd77b5d9f5281341c40b46fef1d98336adc2d46e836a72b2"
+content-hash = "72a6ed7e817ef4fa3958307b5223f4b0540a67f8c338ed5cc2c5f7ec0049f805"

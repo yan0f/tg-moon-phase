@@ -7,9 +7,9 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-pylunar = "^0.7.2"
+pylunar = "^0.7.3"
 python-dotenv = "^1.0.1"
-telethon = "^1.36.0"
+telethon = "^1.37.0"
 python-crontab = "^3.2.0"
 
 [tool.ruff]
