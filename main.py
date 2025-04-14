@@ -76,7 +76,7 @@ if __name__ == '__main__':
     document_id = get_tg_emoji_document_id(phase_emoji)
     set_status(document_id, str(abspath.parent / 'anon.session'))
 
-    command = f'{abspath.parent}/venv/bin/python {abspath} >> out.txt  2>&1'
+    command = f'cd {abspath.parent} && /home/yan/.cargo/bin/uv run python main.py >> out.txt  1>&1'
 
     delete_previous_cronjobs(command)
 
